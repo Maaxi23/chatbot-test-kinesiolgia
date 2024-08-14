@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot de Kinesiología</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="kinesiology-logo.png" alt="Logo de Kinesiología" class="logo">
+            <h1>Asistente Virtual de Kinesiología</h1>
+            <p>Obtén respuestas a todas tus preguntas sobre la kinesiología en el mundo.</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="chat-container">
+            <div class="chat-box" id="chat-box">
+                <div class="chat-message bot"><i class="fas fa-robot"></i> Hola, soy tu asistente virtual sobre Kinesiología. ¿En qué puedo ayudarte hoy?</div>
+            </div>
+            <div class="input-container">
+                <input type="text" id="user-input" placeholder="Escribe tu mensaje aquí..." onkeypress="if(event.keyCode === 13) sendMessage()">
+                <button onclick="sendMessage()"><i class="fas fa-paper-plane"></i> Enviar</button>
+            </div>
+        </div>
+
+        <aside>
+            <img src="kinesiologia.jpg" alt="Imagen de kinesiología" class="info-image">
+            <h2>¿Qué es la Kinesiología?</h2>
+            <p>La kinesiología es el estudio del movimiento humano y cómo se relaciona con la salud y el bienestar. Es fundamental en la rehabilitación física y la mejora de la calidad de vida.</p>
+            <div class="quick-info">
+                <h3><i class="fas fa-info-circle"></i> Datos Rápidos:</h3>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> Importante en la rehabilitación post-cirugía.</li>
+                    <li><i class="fas fa-check-circle"></i> Aborda problemas de movilidad y dolor crónico.</li>
+                    <li><i class="fas fa-check-circle"></i> Ayuda en la recuperación de lesiones deportivas.</li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Chatbot de Kinesiología. Todos los derechos reservados. | <a href="#">Términos y Condiciones</a> | <a href="#">Política de Privacidad</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
